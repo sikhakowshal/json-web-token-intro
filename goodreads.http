@@ -1,0 +1,28 @@
+###
+
+GET http://localhost:3000/books/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imtvd3NoYWwxMjMiLCJpYXQiOjE2NzI4MDg4NjF9.nS9PSp30bliTnUUpjsNvv0n0u-_9ep0VZyPGdydg3jw
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "name":"kowshal",
+    "username":"kowshal123",
+    "password": "kowshal@456",
+    "gender": "Male",
+    "location":"hyderabad"
+}
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"kowshal123",
+    "password": "kowshal@456"
+}
